@@ -1,0 +1,67 @@
+
+<html>
+<head>
+<style>
+.container{
+position:relative;
+width:900px;
+height:500px;
+border-radius:5px;
+
+overflow:hidden;
+}
+</style>
+<div style=" background-color:#003366; color:whitesmoke; padding:5px; width: 1000px; "> <table> <tr> <td> <img src="https://iwiish.files.wordpress.com/2016/01/pinky-hope.jpg" height="120" width="170" > </td> <td><p> <font size="10">HOPE HOSPITALS </p> </td> <td> <p> <font size="4">    &nbsp; &nbsp; Contact us: (123)456-7890  <br>  &nbsp; &nbsp; email- pinky@hope.com </tr> </table> </div>q
+</head>
+<body> 
+<table width="100%">
+<tr> 
+<td> <div style=" background-color:#003366; color:whitesmoke; padding:10px; text-align:center; text-decoration:none; "> <font color="whitesmoke" size="3" > <a style= "color: whitesmoke; text-decoration: none" href="nethomedesign1.jsp"> <b> HOME PAGE </b> </a> </div> </td>
+<td> <div style=" background-color:#003366; color:whitesmoke; padding:10px; text-align:center; text-decoration:none;"> <font color="whitesmoke" size="3" > <a style= "color: whitesmoke; text-decoration: none" href="netdochtml.jsp"> <b> DOCTORS </b> </a> </div> </td>
+<td> <div style=" background-color:#003366; color:whitesmoke; padding:10px; text-align:center; text-decoration:none;"> <font color="whitesmoke" size="3" > <a style= "color: whitesmoke; text-decoration: none" href="netpathtml.jsp"> <b> PATIENTS </b> </a> </div> </td>
+<td> <div style=" background-color:#003366; color:whitesmoke; padding:10px; text-align:center; text-decoration:none;"> <font color="whitesmoke"size="3" > <a style= "color: whitesmoke; text-decoration: none" href="netappointmenthtml.jsp"> <b> APPOINTMENTS </b> </a> </div> </td>
+<td> <div style=" background-color:#003366; color:whitesmoke; padding:10px; text-align:center; text-decoration:none;"> <font color="whitesmoke" size="3" > <a style= "color: whitesmoke; text-decoration: none" href="netinsurancehtml.jsp"> <b> INSURANCES </b> </a> </div> </td>
+<td> <div style=" background-color:#003366; color:whitesmoke; padding:10px; text-align:center; text-decoration:none;"> <font color="whitesmoke" size="3" > <a style= "color: whitesmoke; text-decoration: none" href="netdischargehtml.jsp"> <b> DISCHARGES </b> </a> </div> </td>
+<td> <div style=" background-color:#003366; color:whitesmoke; padding:10px; text-align:center; text-decoration:none;"> <font color="whitesmoke" size="3" > <a style= "color: whitesmoke; text-decoration: none" href="netbillhtml.jsp"> <b> BILLS </b> </a> </div> </td>
+<td> <div style=" background-color:#003366; color:whitesmoke; padding:10px; text-align:center; text-decoration:none;"> <font color="whitesmoke" size="3" > <a style= "color: whitesmoke; text-decoration: none" href="netadminlogin.jsp"> <b> ADMIN </b> </a></div> </td>
+</tr>
+
+</table>
+<table> <tr>
+<td>
+<div id="imgGallary" class="container">
+<img src="https://iwiish.files.wordpress.com/2016/01/hospital-stuff.jpg" height="700" width="700" />
+<img src="https://iwiish.files.wordpress.com/2016/01/hospital1.jpg" height="700" width="700" />
+<img src="https://iwiish.files.wordpress.com/2016/01/hospitalbacknew.jpg" height="700" width="700"/>
+<img src="https://iwiish.files.wordpress.com/2016/01/backd.jpg" height="700" width="700"/>
+<img src="https://iwiish.files.wordpress.com/2016/01/background.jpg" height="700" width="700"/>
+<img src="https://iwiish.files.wordpress.com/2016/01/backr.jpg" height="700" width="700"/>
+</div> </td> <td height="180%" width="100%"> <div style="background-color:#FFFF66; color:blue; padding:10px; text-align:center; "> <font size="5" > <b> More Information </div><table width="100%">
+<tr> <div style=" background-color:#003366; color:whitesmoke; padding:10px; text-align:center; "> <font size="5" > <b>ABOUT US </div></tr>
+<tr> <div style=" background-color:#003366; color:whitesmoke; padding:10px; text-align:center; "> <font size="5"> <b> FIND LOCATION </div> </tr> 
+<tr> <div style=" background-color:#003366; color:whitesmoke; padding:10px; text-align:center; "><font size="5"> <b> CONTACT US </div> </tr> 
+<tr> <div style=" background-color:#003366; color:whitesmoke; padding:10px; text-align:center; "><font size="5"> <b> CAREERS </div> </tr> 
+<tr> <div style=" background-color:#003366; color:whitesmoke; padding:10px; text-align:center; "><font size="5"><a style= "color: whitesmoke; text-decoration: none" href="netdonate.jsp"> <b> DONATE </div> </tr>
+</table> </div> </td> </tr>
+
+<script>
+(function(){
+var imgLen = document.getElementById('imgGallary');
+var images = imgLen.getElementsByTagName('img');
+var counter = 1;
+
+if(counter <= images.length){
+setInterval(function(){
+images[0].src = images[counter].src;
+console.log(images[counter].src);
+counter++;
+
+if(counter === images.length){
+counter = 1;
+}
+},3000);
+}
+})();
+</script>
+</body>
+</html>
